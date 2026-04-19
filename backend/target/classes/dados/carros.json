@@ -1,0 +1,73 @@
+{
+  "carros": {
+    "carro_001": {
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "ano": 2022,
+      "versao": "XEi",
+      "detalhes_opcoes": {
+        "filtro": {
+          "descricao": "Filtro de ar esportivo de alta performance para otimização do fluxo de ar.",
+          "arquivo_mp4": "https://exemplo.com/videos/filtro_kn.mp4",
+          "link": "https://exemplo.com/produto/filtro_kn"
+        },
+        "bateria": {
+          "descricao": "Bateria automotiva Heliar de 60Ah, ideal para veículos com alta demanda elétrica.",
+          "arquivo_mp4": "https://exemplo.com/videos/bateria_heliar.mp4",
+          "link": "https://exemplo.com/produto/bateria_heliar"
+        },
+        "ar_condicionado": {
+          "descricao": "Sistema de ar condicionado digital com controle de temperatura dual zone.",
+          "arquivo_mp4": "https://exemplo.com/videos/ar_dualzone.mp4",
+          "link": "https://exemplo.com/produto/ar_dualzone"
+        }
+      }
+    },
+    "carro_002": {
+      "marca": "Honda",
+      "modelo": "Civic",
+      "ano": 2023,
+      "versao": "Touring",
+      "detalhes_opcoes": {
+        "filtro": {
+          "descricao": "Filtro de cabine com carvão ativado para melhor qualidade do ar interno.",
+          "arquivo_mp4": "https://exemplo.com/videos/filtro_cabine.mp4",
+          "link": "https://exemplo.com/produto/filtro_cabine"
+        },
+        "bateria": {
+          "descricao": "Bateria Moura de 50Ah, com tecnologia avançada para maior durabilidade.",
+          "arquivo_mp4": "https://exemplo.com/videos/bateria_moura.mp4",
+          "link": "https://exemplo.com/produto/bateria_moura"
+        },
+        "ar_condicionado": {
+          "descricao": "Ar condicionado automático com saídas para o banco traseiro, conforto para todos.",
+          "arquivo_mp4": "https://exemplo.com/videos/ar_automatico.mp4",
+          "link": "https://exemplo.com/produto/ar_automatico"
+        }
+      }
+    },
+    "carro_003": {
+      "marca": "Chevrolet",
+      "modelo": "Onix",
+      "ano": 2021,
+      "versao": "LTZ",
+      "detalhes_opcoes": {
+        "filtro": {
+          "descricao": "Filtro de óleo original GM, essencial para a longevidade do motor.",
+          "arquivo_mp4": "https://exemplo.com/videos/filtro_oleo_gm.mp4",
+          "link": "https://exemplo.com/produto/filtro_oleo_gm"
+        },
+        "bateria": {
+          "descricao": "Bateria ACDelco de 45Ah, com garantia de performance e confiabilidade.",
+          "arquivo_mp4": "https://exemplo.com/videos/bateria_acdelco.mp4",
+          "link": "https://exemplo.com/produto/bateria_acdelco"
+        },
+        "ar_condicionado": {
+          "descricao": "Sistema de ar condicionado manual, eficiente e fácil de usar.",
+          "arquivo_mp4": "https://exemplo.com/videos/ar_manual.mp4",
+          "link": "https://exemplo.com/produto/ar_manual"
+        }
+      }
+    }
+  }
+}
