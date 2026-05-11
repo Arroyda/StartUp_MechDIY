@@ -1,0 +1,8 @@
+[build]
+  publish = "public"
+
+[[headers]]
+  for = "/dados/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+    Content-Type = "application/json; charset=utf-8"

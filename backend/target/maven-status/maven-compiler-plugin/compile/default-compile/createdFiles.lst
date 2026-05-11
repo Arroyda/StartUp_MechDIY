@@ -1,0 +1,14 @@
+com\mechdiy\modelo\Carro.class
+com\mechdiy\controlador\TratadorExcecoes.class
+com\mechdiy\configuracao\ConfiguracaoCors$1.class
+com\mechdiy\MechDiyAplicacao.class
+com\mechdiy\servico\CarroServico.class
+com\mechdiy\dto\CarroResumoDTO.class
+com\mechdiy\repositorio\CarroRepositorio.class
+com\mechdiy\modelo\ItemManutencao.class
+com\mechdiy\dto\ItemManutencaoDTO.class
+com\mechdiy\repositorio\ItemManutencaoRepositorio.class
+com\mechdiy\configuracao\ConfiguracaoCors.class
+com\mechdiy\configuracao\InicializadorDados.class
+com\mechdiy\dto\CarroDetalheDTO.class
+com\mechdiy\controlador\CarroControlador.class
