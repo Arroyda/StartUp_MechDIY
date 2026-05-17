@@ -3,7 +3,7 @@
     "carro_001": {
       "marca": "Chevrolet",
       "modelo": "Cruze",
-      "ano": "2016",
+      "ano": 2016,
       "versao": "LT 1.4L 4 Cyl. Turbo",
       "detalhes_opcoes": {
         "filtro": {

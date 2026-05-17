@@ -1,25 +1,25 @@
 {
   "carros": {
     "carro_001": {
-      "marca": "Toyota",
-      "modelo": "Corolla",
-      "ano": 2022,
-      "versao": "XEi",
+      "marca": "Chevrolet",
+      "modelo": "Cruze",
+      "ano": 2016,
+      "versao": "LT 1.4L 4 Cyl. Turbo",
       "detalhes_opcoes": {
         "filtro": {
           "descricao": "Filtro de ar esportivo de alta performance para otimização do fluxo de ar.",
-          "video": "https://exemplo.com/videos/filtro_kn.mp4",
-          "linkPeca": "https://exemplo.com/produto/filtro_kn"
+          "video": "https://d2n97g4vasjwsk.cloudfront.net/2016%20Chevrolet%20Cruze%20LT%201.4L%204%20Cyl.%20Turbo%2FAir%20Filter%20Engine.mp4",
+          "linkPeca": "https://www.mercadolivre.com.br/elemento-do-filtro-de-ar-cruze-14-16v-turbo-flex-mahle/up/MLBU2867306701?pdp_filters=item_id%3AMLB3920968681&from=gshop&matt_tool=48434928&matt_internal_campaign_id=327317204&matt_word=&matt_source=google&matt_campaign_id=23048606145&matt_ad_group_id=197895082248&matt_match_type=&matt_network=g&matt_device=c&matt_creative=794518271001&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=9844977&matt_product_id=MLBU2867306701&matt_product_partition_id=2462664047906&matt_target_id=aud-1966009190540:pla-2462664047906&cq_src=google_ads&cq_cmp=23048606145&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=23048606145&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU9Mlw27L5HKfMKkAEkQZ7SR0lGOmb_rNJb6JJttYJev1ObxeTQ2LhwaAl0FEALw_wcB"
         },
         "bateria": {
-          "descricao": "Bateria automotiva Heliar de 60Ah, ideal para veículos com alta demanda elétrica.",
-          "video": "https://exemplo.com/videos/bateria_heliar.mp4",
-          "linkPeca": "https://exemplo.com/produto/bateria_heliar"
+          "descricao": "Bateria automotiva Moura de 60Ah, ideal para veículos com alta demanda elétrica.",
+          "video": "https://d2n97g4vasjwsk.cloudfront.net/2016%20Chevrolet%20Cruze%20LT%201.4L%204%20Cyl.%20Turbo%2FBattery%20Replace.mp4",
+          "linkPeca": "https://www.mercadolivre.com.br/bateria-de-carro-moura-60ah-amperes-m60ad-moura-sem-troca/up/MLBU3100648091?pdp_filters=item_id%3AMLB5338805456&from=gshop&matt_tool=19723595&matt_internal_campaign_id=355507492&matt_word=&matt_source=google&matt_campaign_id=23317041816&matt_ad_group_id=197768612047&matt_match_type=&matt_network=g&matt_device=c&matt_creative=799628207986&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=5083024883&matt_product_id=MLBU3100648091&matt_product_partition_id=2471848449988&matt_target_id=aud-1966009190540:pla-2471848449988&cq_src=google_ads&cq_cmp=23317041816&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=23317041816&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU_UCHPayx6JmyU4mKDq7W6n--aikim_aFRY90_4ZDgj0woDWZr00qoaAndHEALw_wcB"
         },
         "ar_condicionado": {
-          "descricao": "Sistema de ar condicionado digital com controle de temperatura dual zone.",
-          "video": "https://exemplo.com/videos/ar_dualzone.mp4",
-          "linkPeca": "https://exemplo.com/produto/ar_dualzone"
+          "descricao": "Filtro de ar condicionado digital com controle de temperatura dual zone.",
+          "video": "https://d2n97g4vasjwsk.cloudfront.net/2016%20Chevrolet%20Cruze%20LT%201.4L%204%20Cyl.%20Turbo%2FAir%20Filter%20Cabin.mp4",
+          "linkPeca": "https://www.mercadolivre.com.br/filtro-de-cabine-ar-condicionado-cruze-onix-tracker-mahle/up/MLBU3204116065?pdp_filters=item_id%3AMLB5408503120&from=gshop&matt_tool=15465781&matt_internal_campaign_id=158519&matt_word=&matt_source=google&matt_campaign_id=23048606145&matt_ad_group_id=189182121021&matt_match_type=&matt_network=g&matt_device=c&matt_creative=794624313797&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=9844977&matt_product_id=MLBU3204116065&matt_product_partition_id=2462240606856&matt_target_id=aud-1966009190540:pla-2462240606856&cq_src=google_ads&cq_cmp=23048606145&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=23048606145&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU_go7UWz1q0Vx5p-eeHCnW2b5jpahttlN83TgMtfEzy89k2_FDGZlYaAmrcEALw_wcB"
         }
       }
     },
