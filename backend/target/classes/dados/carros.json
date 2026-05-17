@@ -5,67 +5,70 @@
       "modelo": "Cruze",
       "ano": 2016,
       "versao": "LT 1.4L 4 Cyl. Turbo",
+      "logo": "https://assets.stickpng.com/images/580b585b2edbce24c47b2c48.png",
       "detalhes_opcoes": {
-        "filtro": {
-          "descricao": "Filtro de ar esportivo de alta performance para otimização do fluxo de ar.",
+        "filtro_ar_motor": {
+          "descricao": "O filtro de ar do motor do seu Chevrolet Cruze 2016 limpa o ar que entra no motor. Você deve trocar o filtro do seu Cruze pelo menos uma vez por ano ou a cada 20.000 milhas (aproximadamente 32.000 km), o que acontecer primeiro. Se você dirige em condições com muita poeira ou areia, deve trocar o filtro com mais frequência. Um filtro de ar sujo pode fazer com que o seu Cruze perca entre 1 e 3 mpg (milhas por galão). Dependendo do seu modo de dirigir, você pode economizar de 70 a 100 galões de combustível por ano simplesmente trocando o filtro regularmente.",
           "video": "https://d2n97g4vasjwsk.cloudfront.net/2016%20Chevrolet%20Cruze%20LT%201.4L%204%20Cyl.%20Turbo%2FAir%20Filter%20Engine.mp4",
           "linkPeca": "https://www.mercadolivre.com.br/elemento-do-filtro-de-ar-cruze-14-16v-turbo-flex-mahle/up/MLBU2867306701?pdp_filters=item_id%3AMLB3920968681&from=gshop&matt_tool=48434928&matt_internal_campaign_id=327317204&matt_word=&matt_source=google&matt_campaign_id=23048606145&matt_ad_group_id=197895082248&matt_match_type=&matt_network=g&matt_device=c&matt_creative=794518271001&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=9844977&matt_product_id=MLBU2867306701&matt_product_partition_id=2462664047906&matt_target_id=aud-1966009190540:pla-2462664047906&cq_src=google_ads&cq_cmp=23048606145&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=23048606145&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU9Mlw27L5HKfMKkAEkQZ7SR0lGOmb_rNJb6JJttYJev1ObxeTQ2LhwaAl0FEALw_wcB"
         },
         "bateria": {
-          "descricao": "Bateria automotiva Moura de 60Ah, ideal para veículos com alta demanda elétrica.",
+          "descricao": "Trocar a bateria do Cruze envolve remover os terminais. Quando você reconectar os terminais, as estações salvas no rádio provavelmente serão apagadas. Em alguns modelos do Cruze, talvez seja necessário inserir novamente um código de segurança para o rádio voltar a funcionar. Verifique esse código no manual do proprietário — normalmente ele está em um adesivo ou pequeno cartão dentro do manual.",
           "video": "https://d2n97g4vasjwsk.cloudfront.net/2016%20Chevrolet%20Cruze%20LT%201.4L%204%20Cyl.%20Turbo%2FBattery%20Replace.mp4",
           "linkPeca": "https://www.mercadolivre.com.br/bateria-de-carro-moura-60ah-amperes-m60ad-moura-sem-troca/up/MLBU3100648091?pdp_filters=item_id%3AMLB5338805456&from=gshop&matt_tool=19723595&matt_internal_campaign_id=355507492&matt_word=&matt_source=google&matt_campaign_id=23317041816&matt_ad_group_id=197768612047&matt_match_type=&matt_network=g&matt_device=c&matt_creative=799628207986&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=5083024883&matt_product_id=MLBU3100648091&matt_product_partition_id=2471848449988&matt_target_id=aud-1966009190540:pla-2471848449988&cq_src=google_ads&cq_cmp=23317041816&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=23317041816&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU_UCHPayx6JmyU4mKDq7W6n--aikim_aFRY90_4ZDgj0woDWZr00qoaAndHEALw_wcB"
         },
         "ar_condicionado": {
-          "descricao": "Filtro de ar condicionado digital com controle de temperatura dual zone.",
+          "descricao": "Com que frequência trocar o filtro de ar da cabine? Troque o filtro regularmente: pelo menos uma vez por ano ou a cada 20.000 milhas (cerca de 32.000 km). Se você dirige em locais com muita poeira, trânsito intenso de para e anda, ou tem sensibilidade a pólen, poeira da estrada e poluição, troque o filtro com mais frequência.",
           "video": "https://d2n97g4vasjwsk.cloudfront.net/2016%20Chevrolet%20Cruze%20LT%201.4L%204%20Cyl.%20Turbo%2FAir%20Filter%20Cabin.mp4",
           "linkPeca": "https://www.mercadolivre.com.br/filtro-de-cabine-ar-condicionado-cruze-onix-tracker-mahle/up/MLBU3204116065?pdp_filters=item_id%3AMLB5408503120&from=gshop&matt_tool=15465781&matt_internal_campaign_id=158519&matt_word=&matt_source=google&matt_campaign_id=23048606145&matt_ad_group_id=189182121021&matt_match_type=&matt_network=g&matt_device=c&matt_creative=794624313797&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=9844977&matt_product_id=MLBU3204116065&matt_product_partition_id=2462240606856&matt_target_id=aud-1966009190540:pla-2462240606856&cq_src=google_ads&cq_cmp=23048606145&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=23048606145&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU_go7UWz1q0Vx5p-eeHCnW2b5jpahttlN83TgMtfEzy89k2_FDGZlYaAmrcEALw_wcB"
         }
       }
     },
     "carro_002": {
-      "marca": "Honda",
-      "modelo": "Civic",
-      "ano": 2023,
-      "versao": "Touring",
+      "marca": "Fiat",
+      "modelo": "Uno",
+      "ano": 1997,
+      "versao": "Fire 1.1L 4 Cyl",
+      "logo": "https://assets.stickpng.com/images/580b585b2edbce24c47b2c5e.png",
       "detalhes_opcoes": {
-        "filtro": {
-          "descricao": "Filtro de cabine com carvão ativado para melhor qualidade do ar interno.",
-          "video": "https://exemplo.com/videos/filtro_cabine.mp4",
-          "linkPeca": "https://exemplo.com/produto/filtro_cabine"
+        "filtro_ar_motor": {
+          "descricao": "O filtro de ar do motor do seu Fiat Uno 1997 limpa o ar que entra no motor. Você deve trocar o filtro do seu Uno pelo menos uma vez por ano ou a cada 32.000 km, o que acontecer primeiro. Se você dirige em locais com muita poeira ou areia, deve trocar o filtro com mais frequência. Um filtro de ar sujo fará com que o seu Uno perca entre 1 e 3 mpg (milhas por galão). Dependendo do seu modo de dirigir, você pode economizar entre 70 e 100 galões de combustível por ano simplesmente trocando o filtro regularmente.",
+          "video": "https://d2n97g4vasjwsk.cloudfront.net/1997%20Fiat%20Uno%20Fire%201.1L%204%20Cyl.%2FAir%20Filter%20Engine.mp4",
+          "linkPeca": "https://www.mercadolivre.com.br/filtro-de-ar-mahle-para-fiat-uno-mille-10-8v-fiasa-90-a-01/up/MLBU2879693943?pdp_filters=item_id%3AMLB5208826160&matt_tool=38524122#origin=share&sid=share&wid=MLB5208826160&action=copy"
         },
         "bateria": {
-          "descricao": "Bateria Moura de 50Ah, com tecnologia avançada para maior durabilidade.",
-          "video": "https://exemplo.com/videos/bateria_moura.mp4",
-          "linkPeca": "https://exemplo.com/produto/bateria_moura"
+          "descricao": "O vídeo acima mostra como substituir a bateria do seu Fiat Uno 1997. Recomenda-se trocar a bateria dos veículos Fiat a cada 4 anos. Embora algumas baterias durem muito mais tempo, a maioria começa a se deteriorar quimicamente após quatro anos, então você pode perceber faróis mais fracos e outros efeitos negativos antes que a bateria do seu Uno descarregue completamente e precise ser substituída.",
+          "video": "https://d2n97g4vasjwsk.cloudfront.net/1997%20Fiat%20Uno%20Fire%201.1L%204%20Cyl.%2FBattery%20Replace.mp4",
+          "linkPeca": "https://www.mercadolivre.com.br/bateria-de-carro-moura-60ah-amperes-m60ad-moura-sem-troca/up/MLBU3100648091?pdp_filters=item_id%3AMLB5338805456&matt_tool=38524122#origin=share&sid=share&wid=MLB5338805456&action=copy"
         },
-        "ar_condicionado": {
-          "descricao": "Ar condicionado automático com saídas para o banco traseiro, conforto para todos.",
-          "video": "https://exemplo.com/videos/ar_automatico.mp4",
-          "linkPeca": "https://exemplo.com/produto/ar_automatico"
+        "fluido_freio": {
+          "descricao": "Quando você pisa no pedal de freio do seu Fiat Uno 1997, ele bombeia fluido de freio para os freios, aumentando a pressão para fazer o carro desacelerar. Se não houver fluido de freio suficiente no reservatório, ar pode entrar nas linhas de freio e o seu Uno não irá frear corretamente. O vídeo acima mostra como adicionar fluido de freio ao seu Fiat Uno. Se você estiver adicionando fluido de freio ao seu Uno com frequência, deve verificar se há vazamentos (também existe um vídeo sobre isso!). Como acontece com a maioria dos fluidos do motor, o fluido de freio pode causar sérios danos se entrar em contato com os olhos, então use óculos de proteção e luvas. O fluido de freio também pode danificar a pintura do seu Uno caso seja derramado, então tenha cuidado para não deixar cair no carro.",
+          "video": "https://www.mercadolivre.com.br/kit-2-fluido-freio-bosch-dot-4-500ml-rega/p/MLB67204545?pdp_filters=item_id:MLB4646009577&matt_tool=88981058&matt_internal_campaign_id=355940110&matt_word=&matt_source=google&matt_campaign_id=23048606145&matt_ad_group_id=194470525678&matt_match_type=&matt_network=g&matt_device=c&matt_creative=798167721511&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=584338950&matt_product_id=MLB4646009577&matt_product_partition_id=2468176903331&matt_target_id=aud-1966009190540:pla-2468176903331&cq_src=google_ads&cq_cmp=23048606145&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=23048606145&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU_WbnkzHnIZtshaWUqzLPotFje2jxO3PJtUGg05ZJf2bm4i1QGk464aAl79EALw_wcB",
+          "linkPeca": "https://www.mercadolivre.com.br/kit-2-fluido-freio-bosch-dot-4-500ml-rega/p/MLB67204545?pdp_filters=item_id:MLB4646009577&matt_tool=88981058&matt_internal_campaign_id=355940110&matt_word=&matt_source=google&matt_campaign_id=23048606145&matt_ad_group_id=194470525678&matt_match_type=&matt_network=g&matt_device=c&matt_creative=798167721511&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=584338950&matt_product_id=MLB4646009577&matt_product_partition_id=2468176903331&matt_target_id=aud-1966009190540:pla-2468176903331&cq_src=google_ads&cq_cmp=23048606145&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=23048606145&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU_WbnkzHnIZtshaWUqzLPotFje2jxO3PJtUGg05ZJf2bm4i1QGk464aAl79EALw_wcB"
         }
       }
     },
     "carro_003": {
-      "marca": "Chevrolet",
-      "modelo": "Onix",
-      "ano": 2021,
-      "versao": "LTZ",
+      "marca": "Ford",
+      "modelo": "Fiesta",
+      "ano": 2011,
+      "versao": "SE 1.6L 4 Cyl. Sedan",
+      "logo": "https://assets.stickpng.com/images/580b585b2edbce24c47b2c67.png",
       "detalhes_opcoes": {
-        "filtro": {
-          "descricao": "Filtro de óleo original GM, essencial para a longevidade do motor.",
-          "video": "https://exemplo.com/videos/filtro_oleo_gm.mp4",
-          "linkPeca": "https://exemplo.com/produto/filtro_oleo_gm"
+        "filtro_ar_motor": {
+          "descricao": "O filtro de ar do motor do seu Ford Fiesta 2011 limpa o ar que entra no motor. Você deve trocar o filtro do seu Fiesta pelo menos uma vez por ano ou a cada 32.000 km, o que acontecer primeiro. Se você dirige em locais com muita poeira ou areia, deve trocar o filtro com mais frequência. Um filtro de ar sujo pode fazer com que o seu Fiesta perca entre 1 e 3 mpg (milhas por galão). Dependendo do seu modo de dirigir, você pode economizar entre 70 e 100 galões de combustível por ano simplesmente trocando o filtro regularmente.",
+          "video": "https://d2n97g4vasjwsk.cloudfront.net/2011%20Ford%20Fiesta%20SE%201.6L%204%20Cyl.%20Sedan%2FAir%20Filter%20Engine.mp4",
+          "linkPeca": "https://www.mercadolivre.com.br/filtro-ar-fiesta-16-rocam-2011-2012-2013-2014-wega-fap9003/up/MLBU608183433?pdp_filters=item_id%3AMLB4506029202&matt_tool=38524122#origin=share&sid=share&wid=MLB4506029202&action=copy"
         },
         "bateria": {
-          "descricao": "Bateria ACDelco de 45Ah, com garantia de performance e confiabilidade.",
-          "video": "https://exemplo.com/videos/bateria_acdelco.mp4",
-          "linkPeca": "https://exemplo.com/produto/bateria_acdelco"
+          "descricao": "Com que frequência trocar o filtro de ar da cabine? Troque o filtro regularmente: pelo menos uma vez por ano ou a cada 32.000 km. Se você dirige em locais com muita poeira, trânsito intenso de para e anda, ou tem sensibilidade a pólen, poeira da estrada e poluição, troque o filtro com mais frequência.",
+          "video": "https://d2n97g4vasjwsk.cloudfront.net/2011%20Ford%20Fiesta%20SE%201.6L%204%20Cyl.%20Sedan%2FBattery%20Replace.mp4",
+          "linkPeca": "https://www.mercadolivre.com.br/acessorio-moura-m60gd-original-fiat-moura-sem-troca-12v-60ah/up/MLBU3577986391?pdp_filters=item_id%3AMLB4316537359&matt_tool=38524122#origin=share&sid=share&wid=MLB4316537359&action=copy"
         },
         "ar_condicionado": {
           "descricao": "Sistema de ar condicionado manual, eficiente e fácil de usar.",
-          "video": "https://exemplo.com/videos/ar_manual.mp4",
-          "linkPeca": "https://exemplo.com/produto/ar_manual"
+          "video": "https://d2n97g4vasjwsk.cloudfront.net/2011%20Ford%20Fiesta%20SE%201.6L%204%20Cyl.%20Sedan%2FAir%20Filter%20Cabin.mp4",
+          "linkPeca": "https://www.mercadolivre.com.br/kit-filtro-ar-condicionado-cabine-e-higienizador-ka-fiesta/up/MLBU782648623?pdp_filters=item_id%3AMLB4888234366&from=gshop&matt_tool=73183040&matt_internal_campaign_id=353279512&matt_word=&matt_source=google&matt_campaign_id=22060114741&matt_ad_group_id=187093420281&matt_match_type=&matt_network=g&matt_device=c&matt_creative=767993176949&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=5343447787&matt_product_id=MLBU782648623&matt_product_partition_id=2434530317888&matt_target_id=aud-1966009190540:pla-2434530317888&cq_src=google_ads&cq_cmp=22060114741&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22060114741&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU_7bam0hQ2DI44BXctruo85O02TTGZXDsBiYwNceEDb6pMZvBFkx_waAixDEALw_wcB"
         }
       }
     }

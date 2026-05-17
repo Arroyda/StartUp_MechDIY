@@ -123,6 +123,7 @@ public class CarroServico {
                 carro.getModelo(),
                 carro.getAno(),
                 carro.getVersao(),
+                carro.getLogo(),
                 carro.getItensManutencao().size()
         );
     }
@@ -140,6 +141,7 @@ public class CarroServico {
                 carro.getModelo(),
                 carro.getAno(),
                 carro.getVersao(),
+                carro.getLogo(),
                 itens
         );
     }

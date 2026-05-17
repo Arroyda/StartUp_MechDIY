@@ -42,6 +42,10 @@ public class Carro {
     @Column
     private String versao;
 
+    /** URL da logo da marca */
+    @Column(length = 500)
+    private String logo;
+
     /**
      * Itens de manutenção disponíveis para este veículo.
      * Relação 1:N — um carro possui vários itens (filtro, bateria, ar_condicionado, etc.).
@@ -58,12 +62,13 @@ public class Carro {
 
     public Carro() {}
 
-    public Carro(String chave, String marca, String modelo, Integer ano, String versao) {
+    public Carro(String chave, String marca, String modelo, Integer ano, String versao, String logo) {
         this.chave = chave;
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
         this.versao = versao;
+        this.logo = logo;
     }
 
     // -------------------------
@@ -87,6 +92,9 @@ public class Carro {
 
     public String getVersao() { return versao; }
     public void setVersao(String versao) { this.versao = versao; }
+
+    public String getLogo() { return logo; }
+    public void setLogo(String logo) { this.logo = logo; }
 
     public List<ItemManutencao> getItensManutencao() { return itensManutencao; }
     public void setItensManutencao(List<ItemManutencao> itensManutencao) { this.itensManutencao = itensManutencao; }

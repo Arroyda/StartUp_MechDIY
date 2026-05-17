@@ -12,17 +12,17 @@ public class CarroResumoDTO {
     private String modelo;
     private Integer ano;
     private String versao;
-
-    /** Quantidade de itens de manutenção disponíveis para este carro */
+    private String logo;
     private int quantidadeItens;
 
     public CarroResumoDTO(Long id, String marca, String modelo,
-                          Integer ano, String versao, int quantidadeItens) {
+                          Integer ano, String versao, String logo, int quantidadeItens) {
         this.id = id;
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
         this.versao = versao;
+        this.logo = logo;
         this.quantidadeItens = quantidadeItens;
     }
 
@@ -33,5 +33,6 @@ public class CarroResumoDTO {
     public String getModelo() { return modelo; }
     public Integer getAno() { return ano; }
     public String getVersao() { return versao; }
+    public String getLogo() { return logo; }
     public int getQuantidadeItens() { return quantidadeItens; }
 }

@@ -44,14 +44,10 @@ public class ItemManutencao {
      * URL do vídeo tutorial em formato MP4.
      * Corresponde ao campo "arquivo_mp4" no JSON.
      */
-    @Column(name = "url_video", length = 500)
+    @Column(name = "url_video", length = 2000)
     private String urlVideo;
 
-    /**
-     * URL de compra ou informação do produto.
-     * Corresponde ao campo "link" no JSON.
-     */
-    @Column(name = "url_produto", length = 500)
+    @Column(name = "url_produto", length = 2000)
     private String urlProduto;
 
     // -------------------------

@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MechDIY — Tutoriais de Manutenção Automotiva</title>
+  <link rel="icon" href="public/dados/Logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -58,15 +59,9 @@
     }
 
     .logo-mark {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-      background: linear-gradient(135deg, var(--accent), #ff8a5b);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
-      color: #fff;
     }
 
     .logo-mech { color: var(--text); }
@@ -170,12 +165,33 @@
     }
 
     .card-brand {
-      font-size: 0.75rem;
+      font-size: 1rem;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: var(--accent);
       font-weight: 600;
       margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .card-logo {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .modal-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .modal-logo {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
     }
 
     .card-model {
@@ -406,7 +422,7 @@
   <header>
     <div class="header-inner">
       <div class="logo">
-        <div class="logo-mark">M</div>
+        <div class="logo-mark"><img src="public/dados/Logo.png" alt="MechDIY" style="width:48px;height:48px;object-fit:contain;"></div>
         <div><span class="logo-mech">Mech</span><span class="logo-diy">DIY</span></div>
       </div>
       <div class="header-meta">Tutoriais de manutenção automotiva</div>
@@ -415,7 +431,7 @@
 
   <main>
     <section class="hero">
-      <h1>Manutenção do seu carro, <span>passo a passo</span>.</h1>
+      <h1>Faça você a manutenção do seu carro, <span>passo a passo</span>.</h1>
       <p>Selecione um veículo abaixo para ver os tutoriais em vídeo de filtros, baterias e outros itens. Em dúvida sobre por onde começar? Use o assistente no canto inferior.</p>
     </section>
 
@@ -483,7 +499,10 @@
       }
       $grid.innerHTML = carros.map(c => `
         <article class="card" data-id="${c.id}" tabindex="0" role="button">
-          <div class="card-brand">${escapeHtml(c.marca)}</div>
+          <div class="card-brand">
+            ${c.logo ? `<img class="card-logo" src="${escapeHtml(c.logo)}" alt="${escapeHtml(c.marca)}" onerror="this.style.display='none'">` : ''}
+            ${escapeHtml(c.marca)}
+          </div>
           <div class="card-model">${escapeHtml(c.modelo)}</div>
           <div class="card-meta">${c.ano} · ${escapeHtml(c.versao || '')}</div>
           <div class="card-footer">
@@ -513,19 +532,22 @@
         const carro = await fetchAPI(`/carros/${id}`);
         $modalContent.innerHTML = `
           <div class="modal-header">
-            <div class="modal-brand">${escapeHtml(carro.marca)}</div>
+            <div class="modal-brand">
+              ${carro.logo ? `<img class="modal-logo" src="${escapeHtml(carro.logo)}" alt="${escapeHtml(carro.marca)}" onerror="this.style.display='none'">` : ''}
+              ${escapeHtml(carro.marca)}
+            </div>
             <h2 class="modal-title">${escapeHtml(carro.modelo)}</h2>
             <div class="modal-meta">${carro.ano} · ${escapeHtml(carro.versao || '')}</div>
           </div>
           ${(carro.itensManutencao || []).map(item => `
             <div class="item">
               <div class="item-header">
-                <span class="item-tipo">${escapeHtml(item.tipo.replace('_', ' '))}</span>
+                <span class="item-tipo">${escapeHtml(item.tipo.replace(/_/g, ' '))}</span>
               </div>
               <div class="item-actions">
                 ${item.urlVideo ? `<button class="btn btn-primary" data-video="${escapeHtml(item.urlVideo)}">▶ Assistir tutorial</button>` : ''}
                 ${item.descricao ? `<button class="btn btn-descricao">📋 Ver descrição</button>` : ''}
-                ${item.urlProduto ? `<a class="btn" href="${escapeHtml(item.urlProduto)}" target="_blank" rel="noopener">🛒 Ver produto</a>` : ''}
+                ${item.urlProduto ? `<a class="btn" href="${escapeHtml(item.urlProduto)}" target="_blank" rel="noopener">🛒 Comprar Peça</a>` : ''}
               </div>
               <div class="descricao-wrapper">${escapeHtml(item.descricao)}</div>
               <div class="video-wrapper">
@@ -546,7 +568,7 @@
             } else {
               video.pause();
               wrapper.classList.remove('open');
-              btn.textContent = '▶ Assistir tutorial';
+              btn.textContent = '▶ Assistir Tutorial';
             }
           });
         });
@@ -599,6 +621,6 @@
 
   <!-- Botpress Webchat -->
   <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
-  <script src="https://files.bpcontent.cloud/2026/05/09/13/20260509131809-BCFXVQ4N.js" defer></script>
+  <script src="https://files.bpcontent.cloud/2026/05/17/16/20260517164759-WUHASNOK.js" defer></script>
 </body>
 </html>

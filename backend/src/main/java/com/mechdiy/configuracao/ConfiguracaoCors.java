@@ -22,18 +22,9 @@ public class ConfiguracaoCors {
             public void addCorsMappings(CorsRegistry registro) {
                 registro
                     .addMapping("/api/**")
-                    // Origens permitidas: frontends de desenvolvimento
-                    .allowedOrigins(
-                            "http://localhost:5173",  // Vite dev server padrão
-                            "http://localhost:3000",  // CRA / Next.js
-                            "http://localhost:5500",  // Live Server (VSCode)
-                            "http://127.0.0.1:5500",  // Live Server (VSCode) — variante 127.0.0.1
-                            "http://localhost:8000",  // python -m http.server
-                            "http://127.0.0.1:8000"   // python -m http.server — variante 127.0.0.1
-                    )
+                    .allowedOriginPatterns("*")
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                    .allowedHeaders("*")
-                    .allowCredentials(true);
+                    .allowedHeaders("*");
             }
         };
     }

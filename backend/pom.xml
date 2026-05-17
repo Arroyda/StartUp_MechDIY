@@ -49,14 +49,6 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- DevTools: reinicia o servidor automaticamente ao salvar arquivos -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-
         <!-- Swagger UI: gera interface visual para testar todos os endpoints da API -->
         <!-- Acesse em http://localhost:8080/swagger-ui.html após subir o servidor -->
         <dependency>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MechDIY — Tutoriais de Manutenção Automotiva</title>
+  <link rel="icon" href="/public/dados/Logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -170,12 +171,33 @@
     }
 
     .card-brand {
-      font-size: 0.75rem;
+      font-size: 1rem;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: var(--accent);
       font-weight: 600;
       margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .card-logo {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .modal-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .modal-logo {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
     }
 
     .card-model {
@@ -381,6 +403,19 @@
     .video-wrapper.open { display: block; }
     .video-wrapper video { width: 100%; display: block; }
 
+    .descricao-wrapper {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      display: none;
+    }
+
+    .descricao-wrapper.open { display: block; }
+
     @media (max-width: 640px) {
       .hero h1 { font-size: 2rem; }
       .header-inner, main { padding-left: 1.25rem; padding-right: 1.25rem; }
@@ -402,7 +437,7 @@
 
   <main>
     <section class="hero">
-      <h1>Manutenção do seu carro, <span>passo a passo</span>.</h1>
+      <h1>Faça você a manutenção do seu carro, <span>passo a passo</span>.</h1>
       <p>Selecione um veículo abaixo para ver os tutoriais em vídeo de filtros, baterias e outros itens. Em dúvida sobre por onde começar? Use o assistente no canto inferior.</p>
     </section>
 
@@ -426,7 +461,7 @@
   </div>
 
   <script>
-    const DATA_URL = 'dados/carros.json';
+    const API_BASE = 'http://localhost:8080/api';
 
     const $grid = document.getElementById('grid');
     const $busca = document.getElementById('busca');
@@ -436,60 +471,27 @@
 
     let carrosCache = [];
     let timerBusca = null;
-    let dadosPromise = null;
 
-    function carregarDados() {
-      if (!dadosPromise) {
-        dadosPromise = fetch(DATA_URL)
-          .then(resp => {
-            if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-            return resp.json();
-          })
-          .then(json => {
-            const entradas = Object.entries(json.carros || {});
-            return entradas.map(([chave, dados], indice) => {
-              const opcoes = dados.detalhes_opcoes || {};
-              const itensManutencao = Object.entries(opcoes).map(([tipo, item], i) => ({
-                id: i + 1,
-                tipo,
-                descricao: item.descricao,
-                urlVideo: item.arquivo_mp4,
-                urlProduto: item.link
-              }));
-              return {
-                id: indice + 1,
-                chave,
-                marca: dados.marca,
-                modelo: dados.modelo,
-                ano: dados.ano,
-                versao: dados.versao,
-                itensManutencao,
-                quantidadeItens: itensManutencao.length
-              };
-            });
-          });
-      }
-      return dadosPromise;
+    async function fetchAPI(path) {
+      const resp = await fetch(API_BASE + path);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      return resp.json();
     }
 
     async function carregarCarros(termo = '') {
       $grid.innerHTML = '<div class="loading">Carregando veículos...</div>';
       try {
-        const todos = await carregarDados();
-        const t = termo.trim().toLowerCase();
-        const carros = t
-          ? todos.filter(c =>
-              (c.marca || '').toLowerCase().includes(t) ||
-              (c.modelo || '').toLowerCase().includes(t)
-            )
-          : todos;
+        const path = termo
+          ? `/carros/buscar?termo=${encodeURIComponent(termo)}`
+          : '/carros';
+        const carros = await fetchAPI(path);
         carrosCache = carros;
         renderGrid(carros);
       } catch (err) {
         $grid.innerHTML = `
           <div class="error">
             <p style="font-weight:600;margin-bottom:.5rem">Não foi possível carregar os veículos.</p>
-            <p>Verifique se o arquivo <code>${DATA_URL}</code> está acessível.</p>
+            <p>Verifique se o backend está rodando em <code>http://localhost:8080</code>.</p>
             <p style="margin-top:.5rem;font-size:.85rem;opacity:.7">${err.message}</p>
           </div>
         `;
@@ -503,7 +505,10 @@
       }
       $grid.innerHTML = carros.map(c => `
         <article class="card" data-id="${c.id}" tabindex="0" role="button">
-          <div class="card-brand">${escapeHtml(c.marca)}</div>
+          <div class="card-brand">
+            ${c.logo ? `<img class="card-logo" src="${escapeHtml(c.logo)}" alt="${escapeHtml(c.marca)}" onerror="this.style.display='none'">` : ''}
+            ${escapeHtml(c.marca)}
+          </div>
           <div class="card-model">${escapeHtml(c.modelo)}</div>
           <div class="card-meta">${c.ano} · ${escapeHtml(c.versao || '')}</div>
           <div class="card-footer">
@@ -530,25 +535,27 @@
       document.body.style.overflow = 'hidden';
 
       try {
-        const todos = await carregarDados();
-        const carro = todos.find(c => String(c.id) === String(id));
-        if (!carro) throw new Error('Carro não encontrado');
+        const carro = await fetchAPI(`/carros/${id}`);
         $modalContent.innerHTML = `
           <div class="modal-header">
-            <div class="modal-brand">${escapeHtml(carro.marca)}</div>
+            <div class="modal-brand">
+              ${carro.logo ? `<img class="modal-logo" src="${escapeHtml(carro.logo)}" alt="${escapeHtml(carro.marca)}" onerror="this.style.display='none'">` : ''}
+              ${escapeHtml(carro.marca)}
+            </div>
             <h2 class="modal-title">${escapeHtml(carro.modelo)}</h2>
             <div class="modal-meta">${carro.ano} · ${escapeHtml(carro.versao || '')}</div>
           </div>
           ${(carro.itensManutencao || []).map(item => `
             <div class="item">
               <div class="item-header">
-                <span class="item-tipo">${escapeHtml(item.tipo.replace('_', ' '))}</span>
+                <span class="item-tipo">${escapeHtml(item.tipo.replace(/_/g, ' '))}</span>
               </div>
-              <p class="item-descricao">${escapeHtml(item.descricao)}</p>
               <div class="item-actions">
                 ${item.urlVideo ? `<button class="btn btn-primary" data-video="${escapeHtml(item.urlVideo)}">▶ Assistir tutorial</button>` : ''}
-                ${item.urlProduto ? `<a class="btn" href="${escapeHtml(item.urlProduto)}" target="_blank" rel="noopener">🛒 Ver produto</a>` : ''}
+                ${item.descricao ? `<button class="btn btn-descricao">📋 Ver descrição</button>` : ''}
+                ${item.urlProduto ? `<a class="btn" href="${escapeHtml(item.urlProduto)}" target="_blank" rel="noopener">🛒 Comprar Peça</a>` : ''}
               </div>
+              <div class="descricao-wrapper">${escapeHtml(item.descricao)}</div>
               <div class="video-wrapper">
                 <video controls preload="none"></video>
               </div>
@@ -567,7 +574,20 @@
             } else {
               video.pause();
               wrapper.classList.remove('open');
-              btn.textContent = '▶ Assistir tutorial';
+              btn.textContent = '▶ Assistir Tutorial';
+            }
+          });
+        });
+
+        $modalContent.querySelectorAll('.btn-descricao').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const wrapper = btn.closest('.item').querySelector('.descricao-wrapper');
+            if (!wrapper.classList.contains('open')) {
+              wrapper.classList.add('open');
+              btn.textContent = '📋 Ocultar descrição';
+            } else {
+              wrapper.classList.remove('open');
+              btn.textContent = '📋 Ver descrição';
             }
           });
         });
@@ -607,6 +627,6 @@
 
   <!-- Botpress Webchat -->
   <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
-  <script src="https://files.bpcontent.cloud/2026/05/09/13/20260509131809-BCFXVQ4N.js" defer></script>
+  <script src="https://files.bpcontent.cloud/2026/04/14/22/20260414222538-FV6SET9K.js" defer></script>
 </body>
 </html>

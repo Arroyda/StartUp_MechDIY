@@ -82,9 +82,10 @@ public class InicializadorDados implements CommandLineRunner {
             String modelo = dadosCarro.get("modelo").asText();
             int    ano    = dadosCarro.get("ano").asInt();
             String versao = dadosCarro.has("versao") ? dadosCarro.get("versao").asText() : null;
+            String logo   = dadosCarro.has("logo")   ? dadosCarro.get("logo").asText()   : null;
 
             // Cria a entidade Carro
-            Carro carro = new Carro(chaveJson, marca, modelo, ano, versao);
+            Carro carro = new Carro(chaveJson, marca, modelo, ano, versao, logo);
 
             // Lê os itens de manutenção de "detalhes_opcoes"
             JsonNode detalhesOpcoes = dadosCarro.get("detalhes_opcoes");
