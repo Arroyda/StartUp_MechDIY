@@ -97,9 +97,9 @@ public class InicializadorDados implements CommandLineRunner {
                     String     tipo       = opcao.getKey();   // ex.: "filtro"
                     JsonNode   dadosItem  = opcao.getValue(); // objeto com descricao, arquivo_mp4, link
 
-                    String descricao  = dadosItem.has("descricao")    ? dadosItem.get("descricao").asText()    : "";
-                    String urlVideo   = dadosItem.has("arquivo_mp4")  ? dadosItem.get("arquivo_mp4").asText()  : null;
-                    String urlProduto = dadosItem.has("link")         ? dadosItem.get("link").asText()         : null;
+                    String descricao  = dadosItem.has("descricao") ? dadosItem.get("descricao").asText() : "";
+                    String urlVideo   = dadosItem.has("video")      ? dadosItem.get("video").asText()      : null;
+                    String urlProduto = dadosItem.has("linkPeca")   ? dadosItem.get("linkPeca").asText()   : null;
 
                     // Cria o item e associa ao carro
                     ItemManutencao item = new ItemManutencao(carro, tipo, descricao, urlVideo, urlProduto);
